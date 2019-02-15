@@ -18,7 +18,7 @@ def pv_has_malfunction(area, expected, measured):
     z = me-ex 
     if z.var() > 0:
         P = np.sqrt(len(measured))*(z.mean()-gamma0)/z.std(ddof=1)
-        print(t.cdf(P, len(measured)-1))
+        #print(t.cdf(P, len(measured)-1))
         return P < t.ppf(alpha, len(measured)-1)
     else:
         return z.mean() < gamma0
