@@ -1,6 +1,7 @@
 from statdiagnostics import pv_has_malfunction
 from test_statdiagnostics import test_statdiagnostics
 from matplotlib import pyplot as plt
+from productiondata import *
 
 import pandas as pd
 
@@ -74,3 +75,12 @@ measured_data = [
 months = [1, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2]
 
 test_statdiagnostics(area, expected_data, measured_data, months)
+
+# uberlandstrasse
+print('\nÜberlandstrasse PV')
+test_statdiagnostics(Uberlandstrasse_size, Uberlandstrasse2d_erwartung, Uberlandstrasse2d_2018, months)
+
+# batastrasse
+print('\nBatastrasse PV')
+test_statdiagnostics(Batastrasse_size, Batastrasse40_erwartung, Batastrasse40_2018, months)
+
