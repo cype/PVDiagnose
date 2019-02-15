@@ -1,3 +1,5 @@
+import numpy as np
+from matplotlib import pyplot as plt
 import pandas as pd
 import os
 
@@ -33,7 +35,7 @@ Whm2=PVm["Gesamt-Stromerzeugung Wh"]/53.35*1e-3
 #ix = np.random.randint(1,len(userinp))
 #delta= Whm2 - monats_ertrag
 
-bar(months, monats_ertrag, alpha=0.7, label='sonnendach')
-bar(list(range(1,13)), Whm2, alpha=0.4, label='measured')
+plt.bar(months, monats_ertrag, alpha=0.7, label='sonnendach')
+plt.bar(list(range(1,13)), Whm2, alpha=0.4, label='measured')
 plt.title(str(np.round(np.sum(delta),4)))
 plt.legend()
