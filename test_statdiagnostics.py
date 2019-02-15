@@ -48,7 +48,17 @@ df_rearanged = pd.DataFrame({
 df_rearanged.plot(kind='bar')
 plt.show()
 
-#plot normalizde expected data and normalizde measured data
+'''
+plt.bar(months, expected_data, align='center')
+plt.show()
+
+plt.bar(months, measured_data, align='center')
+plt.show()
+'''
+
+print('output =', pv_has_malfunction(area, expected_data, measured_data))
+
+#plot normalized expected data and normalizde measured data
 df_rearanged = pd.DataFrame({
     'reference normalized' : expected_data_normalized,
     'measured normalized' : measured_data_normalized
@@ -57,11 +67,4 @@ df_rearanged = pd.DataFrame({
 df_rearanged.plot(kind='bar')
 plt.show()
 
-'''
-plt.bar(months, expected_data, align='center')
-plt.show()
-
-plt.bar(months, measured_data, align='center')
-plt.show()
-'''
-print('output =', pv_has_malfunction(area, expected_data, measured_data))
+print('normalized data: output =', pv_has_malfunction(1, expected_data_normalized, measured_data_normalized))
