@@ -68,3 +68,17 @@ df_rearanged.plot(kind='bar')
 plt.show()
 
 print('normalized data: output =', pv_has_malfunction(1, expected_data_normalized, measured_data_normalized))
+
+#plot normalized expected data and perturbed normalizde measured data
+#perturb data:
+measured_data_normalized[5] /= 2
+measured_data_normalized[6] /= 2
+df_rearanged = pd.DataFrame({
+    'reference normalized' : expected_data_normalized,
+    'measured normalized' : measured_data_normalized
+    },index = months
+)
+df_rearanged.plot(kind='bar')
+plt.show()
+
+print('normalized data + perturbation: output =', pv_has_malfunction(1, expected_data_normalized, measured_data_normalized))
