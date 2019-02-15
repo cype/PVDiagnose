@@ -1,8 +1,5 @@
 from statdiagnostics import pv_has_malfunction
 from test_statdiagnostics import test_statdiagnostics
-from matplotlib import pyplot as plt
-
-import pandas as pd
 
 #martins PV
 print('martins PV')
@@ -73,12 +70,11 @@ measured_data = [
 ]
 months = [1, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2]
 
-
 test_statdiagnostics(area, expected_data, measured_data, months)
 
 
 #Turnhalle Gerenmatte
-print('\gerenmatte turnhalle PV')
+print('\ngerenmatte turnhalle PV')
 
 area = 209.4
 expected_data = [
@@ -110,4 +106,7 @@ measured_data = [
 	493.96
 ]
 months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+test_statdiagnostics(area, expected_data, measured_data, months)
+
 
