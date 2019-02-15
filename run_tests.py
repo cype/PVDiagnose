@@ -1,5 +1,6 @@
 from statdiagnostics import pv_has_malfunction
 from test_statdiagnostics import test_statdiagnostics
+<<<<<<< HEAD
 from matplotlib import pyplot as plt
 from productiondata import *
 
@@ -83,4 +84,41 @@ test_statdiagnostics(Uberlandstrasse_size, Uberlandstrasse2d_erwartung, Uberland
 # batastrasse
 print('\nBatastrasse PV')
 test_statdiagnostics(Batastrasse_size, Batastrasse40_erwartung, Batastrasse40_2018, months)
+
+#Turnhalle Gerenmatte
+print('\ngerenmatte turnhalle PV')
+
+area = 209.4
+expected_data = [
+	3.678451416,
+	5.535455476,
+	9.531722907,
+	20.74223832,
+	20.38633695,
+	26.47510769,
+	27.45891763,
+	22.49533782,
+	17.59258905,
+	10.73653655,
+	4.536044433,
+	2.706053459
+]
+measured_data = [
+	652.33,
+	642.95,
+	1720,
+	4100,
+	4160,
+	5170,
+	4870,
+	3810,
+	2950,
+	1810,
+	811.1,
+	493.96
+]
+months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+test_statdiagnostics(area, expected_data, measured_data, months)
+
 
