@@ -1,6 +1,5 @@
 from statdiagnostics import pv_has_malfunction
 from test_statdiagnostics import test_statdiagnostics
-<<<<<<< HEAD
 from matplotlib import pyplot as plt
 from productiondata import *
 
