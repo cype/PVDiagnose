@@ -1,4 +1,5 @@
-adress,size,year,january,february,march,april,may,june,july,august,semptember,october,november,december
-"Baumgarten 1, 6210 Sursee",45,2016,,,,,,,,,689,692,540,582
-"Baumgarten 1, 6210 Sursee",45,2017,258.3,122,87.7,47.6,103.4,328.9,392,564,,,,
-"Ueberlandstrasse 2d, 8953 Dietikon",55.35,2018,308.2,333.8,679.9,1359.8,974.5,1167.9,1150.5,1219.7,1167.5,477,260.3,146.7
+adress,size,year,january,february,march,april,may,june,july,august,semptember,october,november,december,
+"Baumgarten 1, 6210 Sursee",45,2016,,,,,,,,,689,692,540,582,
+"Baumgarten 1, 6210 Sursee",45,2017,258.3,122,87.7,47.6,103.4,328.9,392,564,,,,,
+"Ueberlandstrasse 2d, 8953 Dietikon",55.35,2018,308.2,333.8,679.9,1359.8,974.5,1167.9,1150.5,1219.7,1167.5,477,260.3,146.7,
+"Batastrasse 40, 4313 Möhlin",216,2018,887,1290,2490,4910,4680,5630,5580,4960,4240,2660,1220,657,124
