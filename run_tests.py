@@ -79,8 +79,9 @@ months = [1, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2]
 test_statdiagnostics(area, peak_power, expected_data, measured_data, months)
 
 # uberlandstrasse
-#print('\nÜberlandstrasse PV')
-#test_statdiagnostics(Uberlandstrasse_size, Uberlandstrasse2d_erwartung, Uberlandstrasse2d_2018, months)
+print('\nÜberlandstrasse PV')
+peak_power = 10.44
+test_statdiagnostics(Uberlandstrasse_size, peak_power, Uberlandstrasse2d_erwartung, Uberlandstrasse2d_2018, months)
 
 # batastrasse
 print('\nBatastrasse PV')
