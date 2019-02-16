@@ -9,4 +9,4 @@ def pv_efficiency(area, expected, measured):
     ex = [value * area for value in expected]
     me = measured
 
-    return float(sum(me))/float(ex)
+    return float(sum(me))/float(sum(ex))
