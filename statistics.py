@@ -12,9 +12,10 @@ def average(alist):
 
 #pre: give the list
 #post: returns the variance of the list
-def variance(alist):
+def std(alist):
     summe = 0
     aver = average(alist)
     for n in alist:
         summe += (n - aver)**2
     return math.sqrt(summe/(len(alist)-1))
+

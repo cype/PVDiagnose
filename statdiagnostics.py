@@ -12,7 +12,7 @@ def pv_has_malfunction(area, expected, measured):
     :return: true if there is a malfunction
     """
     gamma0 = 0 # could also be a small negative number
-    alpha = 0.1 # level of test
+    alpha = 0.05 # level of test
     ex = np.array(expected)*area
     me = np.array(measured)
     z = me-ex 
