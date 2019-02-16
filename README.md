@@ -8,9 +8,7 @@ We created a web app that allows users to check the status of their solar instal
 1. Location of the solar panel: address
 2. Size of PV: area in m2
 3. Capacity kWp
-4. PV installation specifications:
-  * m2 (or kWp)
-  * 12 months of production data
+4. 12 months of production data
   
 The app looks up the estimations from sonnendach, compares the the input and returns:  
 
