@@ -36,7 +36,6 @@ measured_data = [
 ]
 '''
 measured_data = [
-    0,
     55,
     89,
     300,
@@ -50,8 +49,8 @@ measured_data = [
     122
 ]
 
-months = [1, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2]
-#months = [12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2]
+#months = [1, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2]
+months = [12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2]
 
 test_statdiagnostics(area, peak_power, expected_data, measured_data, months)
 
