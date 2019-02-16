@@ -20,7 +20,7 @@ See our [wiki](https://github.com/cype/PVDiagnose/wiki) or visit the [opendata.c
 
 # Prototype
 
-Here you can find our first prototype. The user [input interface](http://energy-data-hackdays-d.s3-website.eu-central-1.amazonaws.com/) and the [output results](http://energy-data-hackdays-d.s3-website.eu-central-1.amazonaws.com/results.html)
+Here you can find our first prototype: (1) the user [input interface](http://energy-data-hackdays-d.s3-website.eu-central-1.amazonaws.com/) and (2) the [output results](http://energy-data-hackdays-d.s3-website.eu-central-1.amazonaws.com/results.html).
 
 # Data sources
 
