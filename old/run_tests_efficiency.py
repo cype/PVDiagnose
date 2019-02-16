@@ -116,6 +116,9 @@ measured_data = [
 	811.1,
 	493.96
 ]
+
+#expected_data = [value * 14 / 17 for value in expected_data]
+
 months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
 test_efficiency(area, expected_data, measured_data, months)

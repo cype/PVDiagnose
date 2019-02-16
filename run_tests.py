@@ -9,6 +9,7 @@ import pandas as pd
 print('martins PV')
 
 area = 45
+peak_power = 5.6
 expected_data = [
     5.5790842527,
     2.9860944866,
@@ -38,12 +39,13 @@ measured_data = [
 ]
 months = [1, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2]
 
-test_statdiagnostics(area, expected_data, measured_data, months)
+test_statdiagnostics(area, peak_power, expected_data, measured_data, months)
 
 #obersunne alersheim
 print('\nobersunne alersheim PV')
 
 area = 114 * 1.634 * 0.986
+peak_power = 29.64
 expected_data = [
     3.740368649,
     2.7041781425,
@@ -74,20 +76,22 @@ measured_data = [
 ]
 months = [1, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2]
 
-test_statdiagnostics(area, expected_data, measured_data, months)
+test_statdiagnostics(area, peak_power, expected_data, measured_data, months)
 
 # uberlandstrasse
-print('\nÜberlandstrasse PV')
-test_statdiagnostics(Uberlandstrasse_size, Uberlandstrasse2d_erwartung, Uberlandstrasse2d_2018, months)
+#print('\nÜberlandstrasse PV')
+#test_statdiagnostics(Uberlandstrasse_size, Uberlandstrasse2d_erwartung, Uberlandstrasse2d_2018, months)
 
 # batastrasse
 print('\nBatastrasse PV')
-test_statdiagnostics(Batastrasse_size, Batastrasse40_erwartung, Batastrasse40_2018, months)
+peak_power = 29.92
+test_statdiagnostics(Batastrasse_size, peak_power, Batastrasse40_erwartung, Batastrasse40_2018, months)
 
 #Turnhalle Gerenmatte
 print('\ngerenmatte turnhalle PV')
 
 area = 209.4
+peak_power = 29.9
 expected_data = [
 	3.678451416,
 	5.535455476,
@@ -118,6 +122,6 @@ measured_data = [
 ]
 months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
-test_statdiagnostics(area, expected_data, measured_data, months)
+test_statdiagnostics(area, peak_power, expected_data, measured_data, months)
 
 
