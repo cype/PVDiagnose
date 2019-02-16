@@ -1,7 +1,11 @@
 # PVDiagnose
 
 Energy Hackdays 2019 / Challenge D / [PV-Diagnose](https://hack.opendata.ch/project/302)
+----------------------------------------------------------------------------------------
 
+We created a web app that allows users to check the status of their solar installations by evaluating if the energy production is at a normal state.
+
+See our [wiki](https://github.com/cype/PVDiagnose/wiki) or visit the [opendata.ch](https://opendata.ch/) [energy hackdays](https://hack.opendata.ch/event/24#top) page.
 
 # Prototype
 
