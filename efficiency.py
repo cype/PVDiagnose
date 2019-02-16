@@ -6,7 +6,8 @@ def pv_efficiency(area, expected, measured):
     :return: true if there is a malfunction
     """
 
-    ex = [value * area for value in expected]
+    ex = expected[:len(measured)]
+    ex = [value * area for value in ex]
     me = measured
 
     return float(sum(me))/float(sum(ex))
