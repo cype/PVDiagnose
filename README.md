@@ -10,7 +10,7 @@ We created a web app that allows users to check the status of their solar instal
 3. Capacity kWp
 4. 12 months of production data
   
-The app looks up the estimations from sonnendach, compares the the input and returns:  
+The app looks up the estimations from [sonnendach](https://www.uvek-gis.admin.ch/BFE/sonnendach/?lang=de), compares the the input and returns:  
 
 1. Location on map
 2. Status: ok or not ok
