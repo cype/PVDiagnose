@@ -20,13 +20,8 @@ See our [wiki](https://github.com/cype/PVDiagnose/wiki) or visit the [opendata.c
 
 # Prototype
 
-[Input](http://energy-data-hackdays-d.s3-website.eu-central-1.amazonaws.com/)
-
-[Results](http://energy-data-hackdays-d.s3-website.eu-central-1.amazonaws.com/results.html)
-
+Here you can find our first prototype: (1) the user [input interface](http://energy-data-hackdays-d.s3-website.eu-central-1.amazonaws.com/) and (2) the [output results](http://energy-data-hackdays-d.s3-website.eu-central-1.amazonaws.com/results.html).
 
 # Data sources
 
 Main data: [GeoAdmin](http://api3.geo.admin.ch/) and BFE's [sonnendach](https://www.uvek-gis.admin.ch/BFE/sonnendach/?lang=de)
-
-# Open Questions

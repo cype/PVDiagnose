@@ -1,5 +1,7 @@
 from test_statdiagnostics import test_statdiagnostics
 from productiondata import *
+from Hauptstrasse805736Burg import *
+
 
 #martins PV
 print('martins PV')
@@ -36,6 +38,7 @@ measured_data = [
 ]
 '''
 measured_data = [
+    87.7, #value of most recent month must be provided(taken from january 2018 instead of january 2019)
     55,
     89,
     300,
@@ -49,8 +52,8 @@ measured_data = [
     122
 ]
 
-#months = [1, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2]
-months = [12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2]
+months = [1, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2]
+#months = [12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2]
 
 test_statdiagnostics(area, peak_power, expected_data, measured_data, months)
 
@@ -137,3 +140,9 @@ measured_data = [
 months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
 test_statdiagnostics(area, peak_power, expected_data, measured_data, months)
+
+print('\nHaupttrasse 80')
+
+months = [1, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2]
+
+test_statdiagnostics(size, peak_power, expected_data, measured_data, months)
