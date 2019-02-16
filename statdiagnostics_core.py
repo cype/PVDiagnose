@@ -29,10 +29,11 @@ def pv_has_malfunction(area, expected, measured):
     :return: true if there is a malfunction
     """
     gamma0 = 0 # could also be a small negative number
+    relaxfactor = 0.9
     #alpha = 0.05 # level of test
     #0.95-quantiles of t-distribution of degrees 1 to 11  
     tinv = [-6.341, -2.920, -2.353, -2.132, -2.015, -1.943, -1.895, -1.860, -1.833, -1.812, -1.796] 
-    ex = [area*e for e in expected]
+    ex = [relaxfactor*area*e for e in expected]
     z = []
     for i in range(len(measured)):
        z.append(measured[i]-ex[i]) 
