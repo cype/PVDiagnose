@@ -1,4 +1,4 @@
-from statdiagnostics import pv_has_malfunction
+from statdiagnostics_core import pv_has_malfunction
 from test_statdiagnostics import test_statdiagnostics
 from matplotlib import pyplot as plt
 from productiondata import *
