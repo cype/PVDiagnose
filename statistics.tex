@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+
+\begin{document}
+
+
+
+\section*{Testing for Malfunction}
+
+Let $X_t$ be the monthly produced energy and $\mu_t$ is the value estimated by sonnendach.ch for each month.
+We assume that $X_t$ is normally distributed with variance $\sigma^2$ not depending on $t$. 
+We model the expectation of $X_t$ as the sum of a systematic part $\gamma$ and the temporal part $\mu_t$, concretely
+
+\[ X_t \sim N( \mu_t + \gamma, \sigma^2). \]
+
+Thus we have for $Z_t := X_t - \mu_t$
+
+\[ Z_t \sim N( \gamma, \sigma^2 ) \]
+ 
+and we assume that the $Z_t$ are independent.
+This can now be used to construct a statistical test at level $\alpha$, here $\alpha=0.05$. Let $\gamma_0$ be a real number, in practice $\gamma_0$ will be zero.
+We test the following hypothesis:
+\begin{align*}
+      H_0: \qquad \gamma & \ge \gamma_0  \\
+      H_1: \qquad \gamma & < \gamma_0 
+\end{align*}
+
+If the hypothesis $H_0$ is rejected, the systematic difference $\gamma$ is below the level where it is assumed to be working, thus indicating a malfunction. For testing we use the following statistic
+
+\[ P = \sqrt{n} \frac{\overline{Z}-\gamma_0}{S_n} \]
+
+where $n$ is the number of months, $\overline{Z}$ is the mean of the $Z_t$ and $S_n^2$ is its unbiased sample variance.
+Note that $P$ is t-distributed of degree $n-1$. Therefore, we consider the PV as malfunctioning if
+
+\[ P < t_{n-1}^{-1}(\alpha) \]
+
+with $t_{n-1}^{-1}$ the quantile function of the t-distribution.
+
+
+
+\end{document}
