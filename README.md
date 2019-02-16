@@ -25,5 +25,3 @@ Here you can find our first prototype. The user [input interface](http://energy-
 # Data sources
 
 Main data: [GeoAdmin](http://api3.geo.admin.ch/) and BFE's [sonnendach](https://www.uvek-gis.admin.ch/BFE/sonnendach/?lang=de)
-
-# Open Questions
