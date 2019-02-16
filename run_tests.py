@@ -19,6 +19,7 @@ expected_data = [
     22.5740697919,
     11.0800516792,
     5.9010270749]
+'''
 measured_data = [
     87.7,
     47.6,
@@ -33,7 +34,24 @@ measured_data = [
     258,
     122
 ]
+'''
+measured_data = [
+    0,
+    55,
+    89,
+    300,
+    646,
+    565,
+    699,
+    692,
+    540,
+    582,
+    259,
+    122
+]
+
 months = [1, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2]
+#months = [12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2]
 
 test_statdiagnostics(area, peak_power, expected_data, measured_data, months)
 
