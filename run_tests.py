@@ -1,9 +1,5 @@
-from statdiagnostics_core import pv_has_malfunction
 from test_statdiagnostics import test_statdiagnostics
-from matplotlib import pyplot as plt
 from productiondata import *
-
-import pandas as pd
 
 #martins PV
 print('martins PV')
