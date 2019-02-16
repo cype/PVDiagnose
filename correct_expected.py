@@ -15,7 +15,7 @@ def pv_compute_efficiency(area, peak_power):
     """
     :param area: m^2
     :param peak_power: has to be provided by the user in kWp
-    :return: correct expectation with efficiency of the pv installation
+    :return: computed efficiency of pv installation
     """
 
     return float(peak_power) / area
