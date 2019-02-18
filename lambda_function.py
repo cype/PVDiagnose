@@ -1,13 +1,6 @@
 import json
-import urllib
 from botocore.vendored import requests
-from urllib.parse import urlencode
-from urllib.request import Request, urlopen
-import urllib.request
-import logging
-import http.client as http_client
 import math
-from html.parser import HTMLParser
 
 
 print('Loading function')
